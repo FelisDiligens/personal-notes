@@ -16,7 +16,7 @@ Use `-NoLogo` parameter to start PowerShell without the startup text.
 
 See [PSReadLine#installation](https://github.com/PowerShell/PSReadLine#installation)
 
-````powershell
+```powershell
 Install-Module -Name PowerShellGet -Force
 Install-Module PSReadLine -AllowPrerelease -Force
 ```
