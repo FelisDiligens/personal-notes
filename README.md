@@ -1,4 +1,4 @@
-<img src="assets/markdown.svg" width="96">
+<img src="assets/markdown-white.svg" width="96">
 
 # Personal notes
 
