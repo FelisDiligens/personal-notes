@@ -4,7 +4,7 @@
 
 ## settings.json
 
-```
+```json
 {
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.banner": "never",
