@@ -6,7 +6,7 @@
 
 ### `Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'`
 
-```
+```bash
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 echo "export PATH=~/.npm-global/bin:\$PATH" >> ~/.bashrc
@@ -17,7 +17,7 @@ echo "export PATH=~/.npm-global/bin:\$PATH" >> ~/.bashrc
 
 Sometimes, there are issues due to IPv6. One can force the use of IPv4:
 
-```
+```bash
 alias npm="node --dns-result-order=ipv4first $(which npm)"
 ```
 
