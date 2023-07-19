@@ -1,3 +1,8 @@
+---
+title: Common paths and registry values
+category: Windows
+---
+
 # Common paths and registry values
 
 ## Start menu

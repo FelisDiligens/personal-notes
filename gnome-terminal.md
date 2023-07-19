@@ -1,3 +1,8 @@
+---
+title: GNOME Terminal
+category: Linux
+---
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/GNOME_Terminal_icon_2019.svg" width="96">
 
 # GNOME Terminal

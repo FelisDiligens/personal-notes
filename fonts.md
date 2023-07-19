@@ -1,3 +1,8 @@
+---
+title: Fonts
+category: Linux
+---
+
 # Fonts
 
 ## Nerd fonts

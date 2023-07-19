@@ -1,3 +1,8 @@
+---
+title: Windows Subsystem for Linux
+category: Windows
+---
+
 <img src="assets/wsl.png" width="96">
 
 # Windows Subsystem for Linux

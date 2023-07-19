@@ -8,20 +8,21 @@ Feel free to look through them, if you like. :)
 
 ## Table of contents
 
-### General
-- [Visual Studio Code](vs-code.md)
+### Development tools
 - [Git](git.md)
+- [Node.js / NPM](nodejs-npm.md)
 - [SSH](ssh.md)
-- [Node.js & NPM](nodejs-npm.md)
-- [Starship](starship.md)
+- [PowerShell](starship.md)
+- [Visual Studio Code](vs-code.md)
+
+### Linux
+- [Fonts](fonts.md)
+- [GNOME Terminal](gnome-terminal.md)
+- [Common paths](linux-paths.md)
 
 ### Windows
 - [PowerShell](powershell.md)
+- [Common paths and registry values](windows-paths.md)
 - [Windows Terminal](windows-terminal.md)
 - [Windows Subsystem for Linux](wsl2.md)
-- [Common paths and registry values](windows-paths.md)
 
-### Linux
-- [GNOME Terminal](gnome-terminal.md)
-- [Fonts](fonts.md)
-- [Common paths](linux-paths.md)

@@ -1,3 +1,8 @@
+---
+title: Windows Terminal
+category: Windows
+---
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Windows_Terminal_logo.svg" width="96">
 
 # Windows Terminal

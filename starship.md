@@ -1,3 +1,8 @@
+---
+title: PowerShell
+category: Development tools
+---
+
 <img src="https://starship.rs/icon.png" width="96">
 
 # Starship

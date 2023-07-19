@@ -1,3 +1,8 @@
+---
+title: Common paths
+category: Linux
+---
+
 # Common paths
 Directories have a trailing `/`, files don't.
 

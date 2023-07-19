@@ -1,3 +1,8 @@
+---
+title: PowerShell
+category: Windows
+---
+
 <img alt="powershell.svg" src="assets/powershell.svg" width="96">
 
 # PowerShell

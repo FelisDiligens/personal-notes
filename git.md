@@ -1,5 +1,6 @@
 ---
 title: Git
+category: Development tools
 ---
 
 # Git

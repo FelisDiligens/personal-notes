@@ -1,5 +1,6 @@
 ---
 title: SSH
+category: Development tools
 ---
 
 # SSH
