@@ -10,6 +10,7 @@ Feel free to look through them, if you like. :)
 
 ### General
 - [Visual Studio Code](vs-code.md)
+- [Git](git.md)
 - [Node.js & NPM](nodejs-npm.md)
 - [Starship](starship.md)
 
