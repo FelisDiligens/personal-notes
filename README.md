@@ -12,7 +12,7 @@ Feel free to look through them, if you like. :)
 - [Git](git.md)
 - [Node.js / NPM](nodejs-npm.md)
 - [SSH](ssh.md)
-- [PowerShell](starship.md)
+- [Starship](starship.md)
 - [Visual Studio Code](vs-code.md)
 
 ### Linux

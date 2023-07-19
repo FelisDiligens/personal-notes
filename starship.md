@@ -1,5 +1,5 @@
 ---
-title: PowerShell
+title: Starship
 category: Development tools
 ---
 
