@@ -1,5 +1,4 @@
 # Common paths
-
 Directories have a trailing `/`, files don't.
 
 ## User
@@ -39,17 +38,16 @@ Directories have a trailing `/`, files don't.
 ## VMs
 - libvirt \*.qcow2 images:
     - `/var/lib/libvirt/images/`
-
+ 
+## Docker
+- Volumes: `/var/lib/docker/volumes/`
 
 ## Debian / Ubuntu
-
 - Apt stuff:
 	- `/usr/share/keyrings/`
 	- `/etc/apt/sources.list.d/`
 	- `/etc/apt/sources.list`
 
-
 ## Fedora
-
 - Copr repos: `/etc/yum.repos.d/_copr*`
 - dnf config: `/etc/dnf/dnf.conf`
