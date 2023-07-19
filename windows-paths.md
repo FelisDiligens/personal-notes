@@ -59,6 +59,10 @@ The name before the dot actually doesn't matter. Just make sure the UUID is corr
 
 https://www.deskmodder.de/wiki/index.php/Autostart_Windows_10_Programme_deaktivieren_hinzuf%C3%BCgen_entfernen
 
+## System configuration
+
+- Hosts file: `C:\Windows\System32\drivers\etc\hosts`
+
 ## Looking for more folders to open?
 
 | Target                | UUID                                             |
