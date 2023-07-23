@@ -3,7 +3,7 @@ title: SSH
 category: Development tools
 ---
 
-# SSH
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Unofficial_SSH_Logo.svg/2048px-Unofficial_SSH_Logo.svg.png" width="96">
 
 ## Commands
 
