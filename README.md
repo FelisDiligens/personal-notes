@@ -9,6 +9,7 @@ Feel free to look through them, if you like. :)
 ## Table of contents
 
 ### Development tools
+- [CLI tools](cli-tools.md)
 - [Git](git.md)
 - [Node.js / NPM](nodejs-npm.md)
 - [SSH](ssh.md)
