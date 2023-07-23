@@ -3,9 +3,31 @@ title: Git
 category: Development tools
 ---
 
-# Git
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="128px">
 
-## Push newly created repo
+## Configuration
+```
+git config --global user.email "12345678+username@users.noreply.github.com"
+git config --global user.name "username"
+```
+For E-Mails, look here: https://github.com/settings/emails
+
+![](./assets/github-login.png)
+> You may need to log into GitHub the first time.  
+> The window appears automatically.  
+> (Please use your username, not your email. Just to be sure.)
+
+
+![](./assets/git-linux-login.png)
+> On Linux you need a [Personal Access Token](https://github.com/settings/tokens/new).  
+> Go to `Settings` -> `Developer Settings` -> `Personal Access Tokens`,  
+> create a new token and check `repo`.  
+> The token can then be copied and used as a password.  
+> [You can find previously created PATs here](https://github.com/settings/tokens).
+
+## Instructions
+
+### Push newly created repo
 1. First, create a new remote repo on GitHub: https://help.github.com/en/articles/creating-a-new-repository  
 2. Then push to remote repo:
 
@@ -18,13 +40,14 @@ git remote add origin https://github.com/<user>/<project>.git
 git push -u origin main
 ```
 
-## Drop commits
+### Drop commits
 
 - Remove last commit and any changes: `git reset --hard HEAD^`
   - The last two commits: `git reset --hard HEAD~2`
 - Remove last commit but keep changes staged: `git reset --soft HEAD^`
 
 ## Troubleshooting
+
 ### Repo already created?
 Try: `git pull origin main --allow-unrelated-histories`
 
