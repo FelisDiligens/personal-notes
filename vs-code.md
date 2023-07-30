@@ -41,8 +41,11 @@ category: Development tools
         "source.organizeImports": true
     },
     "[markdown]": {
-        "editor.wordWrap": "off"
+        "editor.wordWrap": "on"
     },
+    "markdown.styles": [
+        "~/.config/Code/User/MarkdownStyles.css"
+    ],
     "prettier.tabWidth": 4,
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
