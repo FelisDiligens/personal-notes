@@ -44,7 +44,7 @@ category: Development tools
         "editor.wordWrap": "on"
     },
     "markdown.styles": [
-        "~/.config/Code/User/MarkdownStyles.css"
+        ".obsidian/snippets/vscode.css"
     ],
     "prettier.tabWidth": 4,
     "rust-analyzer.inlayHints.typeHints.enable": false,
@@ -70,6 +70,7 @@ Or you can use the command line:
 > code --install-extension jebbs.markdown-extended
 > code --uninstall-extension jebbs.markdown-extended
 > ```
+> Source: [Documentation](https://code.visualstudio.com/docs/editor/extension-marketplace#_command-line-extension-management)
 
 | Extension                                                                                                                     | Categories                       | Unique Identifier                            |
 |-------------------------------------------------------------------------------------------------------------------------------|----------------------------------|----------------------------------------------|
