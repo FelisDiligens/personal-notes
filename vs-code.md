@@ -62,7 +62,14 @@ category: Development tools
 
 ## Extensions
 
-Extensions can also be installed by entering `ext install <uid>`
+Extensions can be installed by entering `ext install <uid>` into the Command Palette.  
+Or you can use the command line:  
+> To make it easier to automate and configure VS Code, it is possible to list, install, and uninstall extensions from the command line. When identifying an extension, provide the full name of the form publisher.extension, for example donjayamanne.python.
+> ```bash
+> code --list-extensions
+> code --install-extension jebbs.markdown-extended
+> code --uninstall-extension jebbs.markdown-extended
+> ```
 
 | Extension                                                                                                                     | Categories                       | Unique Identifier                            |
 |-------------------------------------------------------------------------------------------------------------------------------|----------------------------------|----------------------------------------------|
