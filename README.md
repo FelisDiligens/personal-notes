@@ -22,6 +22,7 @@ Feel free to look through them, if you like. :)
 - [Common paths](linux-paths.md)
 
 ### Windows
+- [Cygwin](cygwin.md)
 - [PowerShell](powershell.md)
 - [Common paths and registry values](windows-paths.md)
 - [Windows Terminal](windows-terminal.md)

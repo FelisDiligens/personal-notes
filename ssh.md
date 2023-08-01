@@ -89,3 +89,24 @@ cat ~/.ssh/id_rsa.pub | ssh user@remote "mkdir -p ~/.ssh && cat >> ~/.ssh/author
 ```bash
 vim ~/.ssh/authorized_keys
 ```
+
+## Troubleshooting
+
+### WARNING: UNPROTECTED PRIVATE KEY FILE!
+> ```txt
+> @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+> @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+> @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+> Permissions 0755 for '~/.ssh/id_rsa' are too open.
+> It is required that your private key files are NOT accessible by others.
+> This private key will be ignored.
+> Load key "~/.ssh/id_rsa": bad permissions
+> ```
+Just set the permissions appropriately:
+```bash
+chmod 600 ~/.ssh/id_rsa
+chmod 600 ~/.ssh/id_rsa.pub
+chmod 644 ~/.ssh/known_hosts
+chmod 755 ~/.ssh
+```
+> [Source](https://www.howtogeek.com/168119/fixing-warning-unprotected-private-key-file-on-linux/)
