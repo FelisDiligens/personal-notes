@@ -11,18 +11,18 @@ category: Development tools
 
 ```json
 {
-	"security.workspace.trust.untrustedFiles": "open",
-	"security.workspace.trust.banner": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.banner": "never",
     "security.workspace.trust.enabled": false,
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "compact",
     "window.commandCenter": true,
-	"editor.fontLigatures": true,
+    "editor.fontLigatures": true,
     "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
     "terminal.integrated.fontFamily": "FiraCode NF",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontSize": 16,
-	"terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.profiles.windows": {
         "Cygwin Bash": {
             "path": "C:\\cygwin64\\bin\\bash.exe",
@@ -41,14 +41,15 @@ category: Development tools
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
-	"[markdown]": {
+    "[markdown]": {
         "editor.wordWrap": "on"
     },
     "markdown.styles": [
         ".obsidian/snippets/vscode.css"
     ],
-    "prettier.tabWidth": 4,
+    "prettier.tabWidth": 4
 }
+
 ```
 
 ### Nerd font
