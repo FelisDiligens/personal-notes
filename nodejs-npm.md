@@ -28,3 +28,18 @@ alias npm="node --dns-result-order=ipv4first $(which npm)"
 
 > https://stackoverflow.com/a/74493718
 > https://github.com/npm/cli/issues/4163
+
+
+## CLI tools
+
+### Update package.json
+
+- https://www.npmjs.com/package/npm-check-updates
+- `npm install -g npm-check-updates`
+- `npx npm-check-updates -u`
+
+### Download size CLI
+
+- `npm install -g download-size`
+- Example: `download-size lodash`
+- https://github.com/arve0/npm-download-size-cli
