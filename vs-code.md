@@ -47,7 +47,10 @@ category: Development tools
     "markdown.styles": [
         ".obsidian/snippets/vscode.css"
     ],
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "files.associations": {
+        "*.pacscript": "shellscript"
+    }
 }
 
 ```
