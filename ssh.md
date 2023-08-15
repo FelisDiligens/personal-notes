@@ -92,7 +92,9 @@ vim ~/.ssh/authorized_keys
 
 ## Troubleshooting
 
-### WARNING: UNPROTECTED PRIVATE KEY FILE!
+### Cryptic error message about `~/.ssh/id_rsa`
+
+Either this one:
 > ```txt
 > @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 > @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
@@ -102,6 +104,12 @@ vim ~/.ssh/authorized_keys
 > This private key will be ignored.
 > Load key "~/.ssh/id_rsa": bad permissions
 > ```
+
+Or this one:
+> ```txt
+> sign_and_send_pubkey: signing failed for RSA "~/.ssh/id_rsa" from agent: agent refused operation
+> ```
+
 Just set the permissions appropriately:
 ```bash
 chmod 600 ~/.ssh/id_rsa
