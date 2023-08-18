@@ -13,7 +13,7 @@ category: Linux
 
 - https://gogh-co.github.io/Gogh/
 - `bash -c "$(wget -qO- https://git.io/vQgMr)"`
-- I like `( 163 ) Panda` most
+- I like `( 165 ) Panda` most
 
 ### Add padding
 Add the following code to `~/.config/gtk-3.0/gtk.css`:
