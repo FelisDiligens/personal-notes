@@ -113,6 +113,13 @@ or add to `~/.gitconfig`:
 
 https://stackoverflow.com/a/73100228
 
+### Ignore differing modes (e.g. `old mode 100644, new mode 100755`)
+
+Run in the git repo:
+```
+git config --local core.fileMode false
+```
+
 ### `LF` under Windows
 
 `git config --global core.autocrlf false`
