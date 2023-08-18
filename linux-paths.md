@@ -3,7 +3,7 @@ title: Common paths
 category: Linux
 ---
 
-# Common paths
+# Common paths under Linux
 Directories have a trailing `/`, files don't.
 
 ## User
@@ -29,9 +29,11 @@ Directories have a trailing `/`, files don't.
 - GRUB:
     - `/etc/default/grub`
     - `/boot/efi/EFI/[distro name]/grubx64.efi` (and `shimx64.efi` for Secure Boot)
-- Kernels and modules:
+- Kernels, modules, and DKMS:
     - `/usr/lib/kernel/` or `/lib/kernel/`
     - `/usr/lib/modules/` or `/lib/modules/`
+		- `/lib/modules/**/updates/dkms/`
+    - `/var/lib/dkms`
     - `/boot/vmlinuz-*`
 
 ## systemd
@@ -52,6 +54,7 @@ Directories have a trailing `/`, files don't.
 	- `/usr/share/keyrings/`
 	- `/etc/apt/sources.list.d/`
 	- `/etc/apt/sources.list`
+	- `/var/lib/dpkg/info/`
 
 ## Fedora
 - Copr repos: `/etc/yum.repos.d/_copr*`

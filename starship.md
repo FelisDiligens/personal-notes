@@ -6,12 +6,21 @@ category: Development tools
 <img src="https://starship.rs/icon.png" width="96">
 
 # Starship
+https://starship.rs/
 
-- https://starship.rs/
+## Installation
+
+### Windows
+
 - winget: `winget install --id Starship.Starship`
-- Bash: `curl -sS https://starship.rs/install.sh | sh`
+
+### Linux
+
+- all: `curl -sS https://starship.rs/install.sh | sh`
+- arch: `pacman -S starship`
+- pacstall: `pacstall -I starship-bin`
 
 
-## Config
+## Configuration
 
 [starship.toml](https://github.com/FelisDiligens/dotfiles/blob/master/.config/starship.toml)
