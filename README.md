@@ -18,6 +18,7 @@ Feel free to look through them, if you like. :)
 
 ### Linux
 - [Fonts](fonts.md)
+- [GNOME Extensions](gnome-extensions.md)
 - [GNOME Terminal](gnome-terminal.md)
 - [Common paths](linux-paths.md)
 
