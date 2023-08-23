@@ -12,15 +12,18 @@ category: Linux
 
 ### Scripts
 
-You can create scripts that can be run when through the context menu in Nautilus:
+You can create scripts that can be run through the context menu in Nautilus:
 
-- Create a file, e.g. `Terminal`, under `$HOME/.local/share/nautilus/scripts`
+- Create a file, e.g. `Terminal`, under `$HOME/.local/share/nautilus/scripts`, with the following content:  
 	```bash
 	#!/bin/bash
 	gnome-terminal
 	```
 	(You can also have spaces in the file name)
-- Make it executable, e.g. `chmod +x Terminal`
+- Make it executable, e.g.
+	```bash
+	chmod +x Terminal
+	```
 - Edit the file `.config/nautilus/scripts-accels` and add a shortcut to it (optional, if you want a shortcut):
     ```
 	F4 Terminal

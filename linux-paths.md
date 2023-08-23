@@ -24,6 +24,8 @@ Directories have a trailing `/`, files don't.
 	- `~/.local/share/themes/`
 
 ## System
+- Environment variables:
+	- `/etc/environment`
 - ESP mount point:
     - `/boot/efi`
 - GRUB:
@@ -37,6 +39,8 @@ Directories have a trailing `/`, files don't.
     - `/boot/vmlinuz-*`
 
 ## systemd
+- Environment variables (per user):
+	- `~/.config/environment.d/*.conf`
 - Daemons:
     - `/etc/systemd/system/`
     - `/usr/lib/systemd/system/` or `/lib/systemd/system/`
