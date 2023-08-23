@@ -19,8 +19,10 @@ Feel free to look through them, if you like. :)
 ### Linux
 - [Fonts](fonts.md)
 - [GNOME Extensions](gnome-extensions.md)
+- [GNOME Files (Nautilus)](gnome-files.md)
 - [GNOME Terminal](gnome-terminal.md)
 - [Common paths](linux-paths.md)
+- [Ubuntu](ubuntu.md)
 
 ### Windows
 - [Cygwin](cygwin.md)
