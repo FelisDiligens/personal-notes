@@ -14,6 +14,7 @@ Feel free to look through them, if you like. :)
 - [Node.js / NPM](nodejs-npm.md)
 - [SSH](ssh.md)
 - [Starship](starship.md)
+- [Terminal Emulators](terminal-emulators.md)
 - [Visual Studio Code](vs-code.md)
 
 ### Linux
