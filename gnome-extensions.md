@@ -41,6 +41,7 @@ There are so many! I couldn't list them all, but these are the ones I use on a d
 - [Gnome 4x UI Improvements](https://extensions.gnome.org/extension/4158/gnome-40-ui-improvements/) [(GitHub)](https://github.com/axxapy/gnome-ui-tune)
 - [Peek Top Bar On Fullscreen](https://extensions.gnome.org/extension/6048/peek-top-bar-on-fullscreen/) [(GitHub)](https://github.com/marcinjahn/gnome-peek-top-bar-on-fullscreen-extension#readme)
 - [Space Bar](https://extensions.gnome.org/extension/5090/space-bar/) [(GitHub)](https://github.com/christopher-l/space-bar)
+- [Search Light](https://extensions.gnome.org/extension/5489/search-light/) [(GitHub)](https://github.com/icedman/search-light) - Take the apps search out of overview
 
 
 ### pre GNOME 44 (e.g. for Ubuntu 22.04 LTS):
