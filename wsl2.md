@@ -48,8 +48,29 @@ You will need to edit the [wsl.conf](https://docs.microsoft.com/windows/wsl/wsl-
 systemd=true
 ```
 
+## Debian
 
-## Change default shell
+First, install Debian in WSL2:
+```bash
+wsl --install -d Debian
+```
+
+Then for the packages:
+```bash
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install git wget curl vim python-is-python3 fish bat exa zoxide fzf pipx gnupg2 apt-transport-https
+# Starship
+curl -sS https://starship.rs/install.sh | sh
+# WSL Utilities: https://wslutiliti.es/wslu/install.html
+wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc
+echo "deb https://pkg.wslutiliti.es/debian bookworm main" | sudo tee -a /etc/apt/sources.list
+sudo apt update
+sudo apt install wslu
+```
+
+## Miscellaneous
+
+### Change default shell
 
 ```bash
 chsh --shell /usr/bin/fish
