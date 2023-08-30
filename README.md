@@ -19,6 +19,7 @@ Feel free to look through them, if you like. :)
 - [Visual Studio Code](vs-code.md)
 
 ### Linux
+- [Fish Shell](fish.md)
 - [Fonts](fonts.md)
 - [GNOME Extensions](gnome-extensions.md)
 - [GNOME Files (Nautilus)](gnome-files.md)
