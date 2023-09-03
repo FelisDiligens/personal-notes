@@ -7,6 +7,7 @@ category: Linux
 Directories have a trailing `/`, files don't.
 
 ## User
+- Default home files (including `.bashrc`): `/etc/skel/`
 - \*.desktop files:
 	-  `/usr/share/applications/`
 	-  `/usr/local/share/applications/` (system-wide)
