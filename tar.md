@@ -21,6 +21,7 @@ man tar
 - `-u`: Update (add files to existing archive)
 - `-v`: Verbose output
 - `-f`: Read/write file instead of stdin/stdout (archive)
+- `-C`, `--directory`: Extract to given directory
 
 #### Compression
 
