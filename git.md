@@ -25,6 +25,42 @@ For E-Mails, look here: https://github.com/settings/emails
 > The token can then be copied and used as a password.  
 > [You can find previously created PATs here](https://github.com/settings/tokens).
 
+## Syntax
+
+### Relative references
+Relative references are postfixes that can be appended to `HEAD`, a branch name, or a commit name (e.g. `a5a75bc`), when navigating a git tree.  
+- `^`: one back (like `..`)
+- `^^`: two back (like `../..`)
+- `~`: one back (same as `~1`)
+- `~n`: n back
+
+You can also stack them!
+
+Examples:
+- `HEAD^`
+- `master^^`
+- `a5a75bc~3`
+- `HEAD^^2~3`
+
+Example commands:
+- `git checkout HEAD~3` - move the HEAD (and detach it)
+- `git branch -f main HEAD~3` - "move" the branch to a different commit (force)
+- `git reset --hard HEAD~3` - "remove" commits and any changes in working directory (force push needed)
+- `git reset --soft HEAD~3` - "remove" commits but keep changes in working directory staged (force push needed)
+- `git revert HEAD` - "undo" commit by making a new commit which inverses any changes (can simply be pushed)
+
+See the instructions below for details.
+
+### `git describe`
+
+Output format: `{tag_name}_{commit_count}_g<commit_hash>`
+
+### refspec
+
+Format: `{source}:{target}`
+
+Example: `git push origin foo:bar`
+
 ## Instructions
 
 ### Push newly created repo
@@ -45,6 +81,47 @@ git push -u origin main
 - Remove last commit and any changes: `git reset --hard HEAD^`
   - The last two commits: `git reset --hard HEAD~2`
 - Remove last commit but keep changes staged: `git reset --soft HEAD^`
+
+
+### Revert commits
+
+A safer method than dropping commits is "undoing" the changes.  
+Example: `git revert HEAD`  
+This will inverse the changes from the commit at `HEAD` and create a new commit in the process.
+
+See also: https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
+
+### Squash commits
+
+You can squash commits by running an interactive rebase.  
+`git rebase -i {commit/branch/HEAD}`
+
+Example: `git rebase -i HEAD~4`
+
+You can also squash commits when merging.
+`git merge --squash my-new-feature`
+
+### Amend commit (change message)
+
+`git commit --amend`
+
+### Cherry pick commits to add to a branch
+
+You can "cherry-pick" only specific commits to basically "rebase" them onto a branch.
+
+e.g. `git cherry-pick a5a75bc cd52f12`
+
+### Add a tag
+
+`git tag -a v{tagname} [{commit hash}] -m {tag message}`
+
+If you leave out the commit hash, the default is `HEAD`.
+
+See: [Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+### Track remote branch
+
+`git branch -u origin/main [{local_branch}]`
 
 ## Troubleshooting
 
@@ -128,3 +205,23 @@ git config --local core.fileMode false
 
 - [Move the most recent commit(s) to a new branch with Git - Stack Overflow](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
 - [Git HowTo: revert a commit already pushed to a remote repository](https://gist.github.com/gunjanpatel/18f9e4d1eb609597c50c2118e416e6a6)
+
+## Differences between similar commands
+
+### fetch and pull
+
+- `fetch` only downloads the remote commits and branches
+- `pull` downloads and integrates (merge) remote commits into local branches.
+
+Essentially, `pull` is `fetch` and `merge` put into one command.  
+For example, the following two lines are essentially identical:  
+`git pull origin foo`  
+`git fetch origin foo; git merge origin/foo`
+
+### switch and checkout
+
+Checkout can do two things: move the HEAD to a branch and detach a HEAD to point to a commit.  
+Switch can ONLY move the HEAD to a branch.
+
+## Resources
+- Tutorial: [Learn Git Branching](https://learngitbranching.js.org/)
