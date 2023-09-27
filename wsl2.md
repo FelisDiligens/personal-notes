@@ -7,22 +7,56 @@ category: Windows
 
 # Windows Subsystem for Linux
 
+## Usage
+
+- Shutdown running distro(s): `wsl --shutdown`
+- Update Linux kernel (not WSL itself): `wsl --update`
+- List installed distros: `wsl --list --all --verbose`
+- List installable distros: `wsl --list --online`
+- Install distro (e.g. Debian): `wsl --install -d Debian`
+- Uninstall distro (e.g. Debian): `wsl --unregister Debian`
+- Export distro: `wsl --export Debian $env:USERPROFILE\WSL\DebianExport.tar`
+- Import distro: `wsl --import Debian $env:USERPROFILE\WSL\Debian $env:USERPROFILE\WSL\DebianExport.tar`
+
 ## wslutilities
 
-Contains `wslview`
+- [GitHub](https://github.com/wslutilities/wslu#readme)
+- [Website](https://wslutiliti.es/wslu/)
+- [Installation](https://wslutiliti.es/wslu/install.html)
 
-- https://github.com/wslutilities/wslu#readme
-- https://wslutiliti.es/wslu/
-- `sudo apt install wslu`
+### Add desktop shortcuts
+
+```bash
+find /usr/share/icons -iname "*nautilus*"
+wslusc -n "Files" -i /usr/share/icons/Yaru/256x256@2x/apps/org.gnome.Nautilus.png nautilus
+```
 
 
-## Run in background
+## Miscellaneous
 
-### Interactively
+### Change default shell
+
+```bash
+chsh --shell /usr/bin/fish
+```
+
+### systemd
+Set the systemd flag set in your WSL distro settings.  
+You will need to edit the [wsl.conf](https://docs.microsoft.com/windows/wsl/wsl-config#wslconf) file to ensure systemd starts up on boot.
+
+`/etc/wsl.conf`
+```ini
+[boot]
+systemd=true
+```
+
+### Run in background
+
+#### Interactively
 
 See https://gist.github.com/FelisDiligens/fedd413fc1192aa43150891a631e9c8c
 
-### Automatically
+#### Automatically
 
 `wsl-startup.vbs`
 
@@ -35,43 +69,24 @@ ws.run "wsl -d <Distro>", 0
 
 > Source: https://askubuntu.com/a/1452424
 
+### Mount ext4
 
-## systemd
+https://www.hanselman.com/blog/wsl2-can-now-mount-linux-ext4-disks-directly
 
-### Set the systemd flag set in your WSL distro settings
-
-You will need to edit the [wsl.conf](https://docs.microsoft.com/windows/wsl/wsl-config#wslconf) file to ensure systemd starts up on boot.
-
-`/etc/wsl.conf`
-```ini
-[boot]
-systemd=true
+List drives in PowerShell:
+```powershell
+Get-CimInstance -query "SELECT * from Win32_DiskDrive"
+wsl --mount \\.\PHYSICALDRIVE0 --type ext4 --partition 2
 ```
 
-## Debian
-
-First, install Debian in WSL2:
-```bash
-wsl --install -d Debian
+Mount a partition in WSL:
+```powershell
+wsl --mount \\.\PHYSICALDRIVE0 --type ext4 --partition 2
 ```
 
-Then for the packages:
-```bash
-sudo apt update && sudo apt dist-upgrade -y
-sudo apt install git wget curl vim python-is-python3 fish bat exa zoxide fzf pipx gnupg2 apt-transport-https
-# Starship
-curl -sS https://starship.rs/install.sh | sh
-# WSL Utilities: https://wslutiliti.es/wslu/install.html
-wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc
-echo "deb https://pkg.wslutiliti.es/debian bookworm main" | sudo tee -a /etc/apt/sources.list
-sudo apt update
-sudo apt install wslu
-```
+This should mount it under: `/mnt/wsl/PHYSICALDRIVE0p2`
 
-## Miscellaneous
-
-### Change default shell
-
-```bash
-chsh --shell /usr/bin/fish
+To unmount it:
+```powershell
+wsl --unmount \\.\PHYSICALDRIVE0
 ```
