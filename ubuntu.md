@@ -23,6 +23,17 @@ Some interesting projects:
 - [Nala](https://gitlab.com/volian/nala) is a front-end for libapt-pkg.
 - [Pacstall](https://pacstall.dev/) - The AUR Ubuntu never had
 
+### Flatpak and AppImages
+
+```bash
+# Install Flatpak, and FUSE for AppImage.
+sudo apt install flatpak libfuse2
+# Add the Flathub repo:
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# Install GNOME Software with Flatpak plugin:
+sudo apt install --install-suggests gnome-software gnome-software-plugin-flatpak
+```
+
 ## Troubleshooting
 
 ### Install Microsoft Fonts
