@@ -6,6 +6,27 @@ category: Linux
 # Common paths under Linux
 Directories have a trailing `/`, files don't.
 
+## Basics
+Here's an overview over the linux file system structure:
+
+- ⚙️ `/etc/` - editable-text-configurations: contains system configuration files, such as the password file (`passwd`), network configuration files, and startup scripts
+- 📦 `/bin/` - contains binaries (essential ones such as `ls`, `cp`, and `mv`)
+- 🧰 `/sbin/` - contains system binaries that only root can/should execute
+- 🛠️ `/opt/` - contains optional binaries and libraries
+- 🧑‍💻 `/usr/` - contains various files (including binaries) that users share
+	- 📦 `/usr/bin/` - often symlinked to `/bin/`, but can also be used separately for non-essential binaries (such as text editors, web browsers, and office suites) installed through the package manager depending on the Linux distro
+	- 📦 `/usr/local/bin/` - contains binaries a user compiled/installed manually (i.e. not through the package manager)
+- 📜 `/var/` - variable data files: contains logs, cache, memory dumps, mail spools, and **var**ious other files that may change over time
+- 👢 `/boot/` - contains the kernel, initrd (initial ram disk), and the boot loader
+- 🖱️ `/dev/` - contains device files, which represent physical devices such as hard drives, CD-ROM drives, and network interfaces
+- 💻 `/proc/` - contains information about running processes (folders by PID)
+- 📚 `/lib/` - contains libraries shared by applications (`*.o` and `*.so` files)
+- 💽 `/media/` - contains mount points for removable media devices, such as CDs and USB drives (mounted automatically by the operating system)
+- 💾 `/mnt/` - used for mounting file systems manually (by the user)
+- 🗑️ `/tmp/` - contains temporary files
+- 👑 `/root/` - home folder of the root user (UID: 0)
+- 🏡 `/home/` - contains home folders of all regular users
+
 ## User
 - Default home files (including `.bashrc`): `/etc/skel/`
 - \*.desktop files:
