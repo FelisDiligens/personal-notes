@@ -20,7 +20,7 @@ Here's an overview over the linux file system structure:
 - 👢 `/boot/` - contains the kernel, initrd (initial ram disk), and the boot loader
 - 🖱️ `/dev/` - contains device files, which represent physical devices such as hard drives, CD-ROM drives, and network interfaces
 - 💻 `/proc/` - contains information about running processes (folders by PID)
-- 📚 `/lib/` - contains libraries shared by applications (`*.o` and `*.so` files)
+- 📚 `/lib/` - contains libraries shared by applications (`*.so` files)
 - 💽 `/media/` - contains mount points for removable media devices, such as CDs and USB drives (mounted automatically by the operating system)
 - 💾 `/mnt/` - used for mounting file systems manually (by the user)
 - 🗑️ `/tmp/` - contains temporary files
