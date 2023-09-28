@@ -38,6 +38,9 @@ Directories have a trailing `/`, files don't.
 		- `/lib/modules/**/updates/dkms/`
     - `/var/lib/dkms`
     - `/boot/vmlinuz-*`
+- TLS Certificates (`*.crt`, `*.pem`):
+	- `/etc/ssl/certs/*.pem`
+	- `/usr/local/share/ca-certificates/*.crt`
 
 ## systemd
 - Environment variables (per user):
