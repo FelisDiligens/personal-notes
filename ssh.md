@@ -90,6 +90,32 @@ cat ~/.ssh/id_rsa.pub | ssh user@remote "mkdir -p ~/.ssh && cat >> ~/.ssh/author
 vim ~/.ssh/authorized_keys
 ```
 
+## Configuration
+
+You can create a `~/.ssh/config` file and add entries like these:
+```txt
+Host Example example.com
+    HostName example.com
+    IdentityFile ~/.ssh/id_rsa
+    User alice
+	
+Host MyServer something.com
+	HostName something.com
+	IdentityFile ~/.ssh/id_rsa2
+	User bob
+```
+
+This allows you to use multiple keys to connect to different hosts.
+
+You can then connect to them either by entering the hostname or the shortname:
+
+```bash
+ssh Example
+ssh MyServer
+```
+
+> Source: https://stackoverflow.com/a/2419609
+
 ## Troubleshooting
 
 ### Cryptic error message about `~/.ssh/id_rsa`
