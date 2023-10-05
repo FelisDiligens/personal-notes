@@ -13,7 +13,9 @@ category: Windows
 
 Cygwin's setup accepts [command-line arguments](https://cygwin.com/faq/faq.html#faq.setup.cli) to install packages from the command-line.
 
-e.g. `setup-x86.exe -q -P packagename1,packagename2` to install packages without any GUI interaction ("unattended setup mode").
+`setup-x86.exe -q -P packagename1,packagename2` to install packages without any GUI interaction ("unattended setup mode").
+
+Use `setup-x86.exe --no-admin` if you don't have admin rights or want to install it for the current user only.
 
 > **note**  
 > Note that you need to use `setup-x86.exe` or `setup-x86_64.exe` as appropriate.
