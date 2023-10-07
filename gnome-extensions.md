@@ -21,6 +21,7 @@ There are so many! I couldn't list them all, but these are the ones I use on a d
 
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) (also known as Ubuntu AppIndicators) [(GitHub)](https://github.com/ubuntu/gnome-shell-extension-appindicator)
+    - [Tray Icons: Reloaded](https://extensions.gnome.org/extension/2890/tray-icons-reloaded/) [(GitHub)](https://github.com/MartinPL/Tray-Icons-Reloaded#readme) 
 - [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) - Adds a clipboard indicator to the top panel, and caches clipboard history.
 - [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) - Disable the screensaver and auto suspend
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) - complete implementation of KDE Connect
