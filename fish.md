@@ -47,6 +47,16 @@ You can also use the solution here: https://superuser.com/a/1212305
 
 ## Functions
 
+## Functions
+
+### Alias
+
+`alias` is a simple wrapper for the `function` builtin, which creates a function wrapping a command.
+
+```bash
+alias x='exit'
+```
+
 ### Save from shell
 
 Use `funcsave {function_name}` to save a function or alias you entered from the interactive shell prompt.  
