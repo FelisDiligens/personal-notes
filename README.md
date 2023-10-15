@@ -27,6 +27,9 @@ Feel free to look through them, if you like. :)
 - [Common paths](linux-paths.md)
 - [Ubuntu](ubuntu.md)
 
+### Miscellaneous
+- [Special characters](special-characters.md)
+
 ### Windows
 - [Cygwin](cygwin.md)
 - [PowerShell](powershell.md)
