@@ -10,6 +10,26 @@ category: Linux
 ### Extensions
 - [Open any terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal)
 
+### Troubleshooting
+
+#### Set Nautilus as default file manager
+
+```bash
+xdg-mime default org.gnome.Nautilus.desktop inode/directory application/x-gnome-saved-search
+```
+
+Edit `/usr/share/applications/mimeinfo.cache`:
+```bash
+# Find
+grep -n "inode/directory=" /usr/share/applications/mimeinfo.cache
+
+# Replace
+PROGRAMS=$(grep "inode/directory=" /usr/share/applications/mimeinfo.cache | sed "s/inode\/directory=//" | sed "s/org.gnome.Nautilus.desktop;//")
+sudo sed -i -E "s/inode\/directory=.*$/inode\/directory=org.gnome.Nautilus.desktop;$PROGRAMS/" /usr/share/applications/mimeinfo.cache
+```
+
+> See also: [vscodium#409](https://github.com/VSCodium/vscodium/issues/409) and [VSCodium/DOCS.md](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#file-manager)
+
 ### Scripts
 
 You can create scripts that can be run through the context menu in Nautilus:
