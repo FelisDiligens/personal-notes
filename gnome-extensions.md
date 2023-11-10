@@ -5,7 +5,27 @@ category: Linux
 
 <img src="assets/Gnomelogo-white.svg" width="140">
 
-## Customization
+## Installation
+
+GNOME extensions are installed into
+- system-wide: `/usr/share/gnome-shell/extensions/`
+- for the user only: `~/.local/share/gnome-shell/extensions/`
+
+### Commands
+- `gnome-extensions install <archive.[zip|tar|...]>`
+- `gnome-extensions enable <extension-id>`
+- `gnome-extensions help [<command>]`
+
+### Enable/Disable version validation
+```bash
+gsettings set org.gnome.shell disable-extension-version-validation "true"
+```
+
+```bash
+gsettings set org.gnome.shell disable-extension-version-validation "false"
+```
+
+### GUI
 
 Installation on Ubuntu:
 ```bash
@@ -40,4 +60,3 @@ flatpak install org.gnome.Extensions com.mattjakeman.ExtensionManager
 |   | [Custom Accent Colors](https://extensions.gnome.org/extension/5547/custom-accent-colors/)                                                                | [GitHub](https://github.com/dimitriskp22/custom-accent-colors)                                                              | ✅        |                                                                                                                                                            |
 | ⭐ | [Rounded Window Corners](https://extensions.gnome.org/extension/5237/rounded-window-corners/)                                                            | [GitHub](https://github.com/yilozt/rounded-window-corners)                                                                  | 🚧       |                                                                                                                                                            |
 | ⭐ | [App Hider](https://extensions.gnome.org/extension/5895/app-hider/)                                                                                      | [GitHub](https://github.com/LynithDev/gnome-app-hider)                                                                      | ✅        |                                                                                                                                                            |
-
