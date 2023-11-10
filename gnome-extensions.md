@@ -3,7 +3,9 @@ title: GNOME Extensions
 category: Linux
 ---
 
-<img src="assets/Gnomelogo-white.svg" width="140">
+<img src="assets/Gnomelogo-white.svg" width="160">
+
+# Extensions
 
 ## Installation
 
@@ -33,7 +35,7 @@ sudo apt install gnome-tweaks gnome-shell-extensions
 flatpak install org.gnome.Extensions com.mattjakeman.ExtensionManager
 ```
 
-## Extensions
+## Favorites
 
 |   | Extension                                                                                                                                                | Links                                                                                                                       | GNOME 45 | Description                                                                                                                                                |
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
