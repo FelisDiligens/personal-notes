@@ -26,6 +26,7 @@ Feel free to look through them, if you like. :)
 - [GNOME Terminal](gnome-terminal.md)
 - [Common paths](linux-paths.md)
 - [Ubuntu](ubuntu.md)
+- [ZSH](zsh.md)
 
 ### Miscellaneous
 - [Special characters](special-characters.md)
