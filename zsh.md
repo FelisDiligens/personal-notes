@@ -97,7 +97,13 @@ Open `~/.p10k.zsh`, search for "color", "foreground" and "background" and change
 
 Example:
 ```bash
+# Ubuntu-like colors:
+typeset -g POWERLEVEL9K_DIR_BACKGROUND=166
+typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=202
 # Manjaro-like colors:
-typeset -g POWERLEVEL9K_DIR_BACKGROUND=030 # 4
-typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=030 # 232
+typeset -g POWERLEVEL9K_DIR_BACKGROUND=030
+typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=030
+# Default
+typeset -g POWERLEVEL9K_DIR_BACKGROUND=4
+typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=232
 ```
