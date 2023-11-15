@@ -123,6 +123,20 @@ See: [Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 
 `git branch -u origin/main [{local_branch}]`
 
+### Merge branch and overwrite conflicts
+
+```bash
+# Overwrite changes by master in current branch:
+git merge -X theirs master
+```
+
+```bash
+# Keep our changes instead of those by master:
+git merge -s ours master
+```
+
+You may want to read: https://howchoo.com/git/git-merge-conflicts-rebase-ours-theirs
+
 ## Troubleshooting
 
 ### Repo already created?
