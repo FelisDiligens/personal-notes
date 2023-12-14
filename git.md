@@ -101,6 +101,9 @@ Example: `git rebase -i HEAD~4`
 You can also squash commits when merging.
 `git merge --squash my-new-feature`
 
+If you want to squash everything to the first commit:
+`git rebase --root -i`
+
 ### Amend commit (change message)
 
 `git commit --amend`
