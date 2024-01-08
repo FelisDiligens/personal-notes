@@ -459,7 +459,7 @@ More? → [copypastecharacter.com/arrows](https://copypastecharacter.com/arrows)
     </tbody>
 </table>
 
-> [Source](https://en.wikipedia.org/wiki/Box-drawing_character#Block_Elements)
+> [Source](https://en.wikipedia.org/wiki/Box-drawing_character#Box_Drawing)
 
 #### Examples
 **Single and double frames**
