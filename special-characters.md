@@ -51,8 +51,12 @@ see [French preposition](https://www.lawlessfrench.com/grammar/a-preposition/)
 
 ## Arrows
 ### Left arrow (\&larr; ←)
-https://left-arrow.net/  
-To create a left arrow: Alt + 27 (on Numpad, with Numlock on)
+[left-arrow.net (Wayback Machine)](https://web.archive.org/web/20220307232537/https://left-arrow.net/)  
+
+To produce a left arrow:
+- Windows: `Alt` + `27` (on the Numpad, with Numlock on)
+- Linux (GNOME on Wayland): press `Ctrl` + `⇧ Shift` + `U` and release, then type `2190`, then confirm with `⏎ Enter` (or `Space`)
+- Microsoft Office / LibreOffice : `<--`
 
 |                   | ←      | ⇐      | ↫        | ⇇       | ⇦      | ⇤       | ⇠      | ↩        | ↤              | ⬱      | ↢        | ⬅      | ↜      | ↞      | ⇽       |
 |-------------------|--------|--------|----------|---------|--------|---------|--------|----------|----------------|--------|----------|--------|--------|--------|---------|
@@ -63,8 +67,12 @@ To create a left arrow: Alt + 27 (on Numpad, with Numlock on)
 
 
 ### Right arrow (→ \&rarr;)
-http://right-arrow.net/  
-To create a right arrow: Alt + 26 (on the Numpad, with Numlock on)
+[right-arrow.net (Wayback Machine)](https://web.archive.org/web/20231227010545/https://right-arrow.net/)  
+
+To produce a right arrow:
+- Windows: `Alt` + `26` (on the Numpad, with Numlock on)
+- Linux (GNOME on Wayland): press `Ctrl` + `⇧ Shift` + `U` and release, then type `2192`, then confirm with `⏎ Enter` (or `Space`)
+- Microsoft Office / LibreOffice : `-->`
 
 |              | →      | ⇒       | ↬      | ⇉      | ⇨      | ⇥      | ⇢      | ↪      | ↦      | ⇶      | ↣      | ⇰      | ↝      | ↠      | ⇾      |
 |--------------|--------|---------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
@@ -86,6 +94,8 @@ To create a right arrow: Alt + 26 (on the Numpad, with Numlock on)
 |   ↙    | South West Arrow        | `&swarr;`   | 0x2199       | 8601         |
 |   ↔    | Left Right Arrow Symbol | `&#8596;`   | 0x2194       | 8596         |
 |   ↕    | Up Down Arrow           | `&#8597;`   | 0x2195       | 8597         |
+
+More? → [copypastecharacter.com/arrows](https://copypastecharacter.com/arrows)
 
 > [Source](https://www.toptal.com/designers/htmlarrows/)
 
