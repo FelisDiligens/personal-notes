@@ -24,7 +24,6 @@ category: Miscellaneous
 |   —    | Em Dash     | `&mdash;`   | 0x2014       | 8212         |
 
 ### Spaces
-https://www.compart.com/de/unicode/U+0020
 
 | Description                                                  | HTML Entity        | Unicode, hex | Unicode, dec |
 | ------------------------------------------------------------ | ------------------ | ------------ | ------------ |
@@ -37,6 +36,8 @@ https://www.compart.com/de/unicode/U+0020
 | [Zero Width Non-Joiner](https://unicode-explorer.com/c/200C) | n/a                | 0x200C       | 8204         |
 | Narrow No-Break Space                                        | n/a                | 0x202F       | 8239         |
 | Zero Width No-Break Space                                    | n/a                | 0xFEFF       | 65279        |
+
+> [Source](https://www.compart.com/de/unicode/U+0020)
 
 ### Bullet points
 | Symbol | Description | HTML Entity | Unicode, hex | Unicode, dec |
@@ -53,7 +54,13 @@ see [French preposition](https://www.lawlessfrench.com/grammar/a-preposition/)
 https://left-arrow.net/  
 To create a left arrow: Alt + 27 (on Numpad, with Numlock on)
 
-<table summary="Left arrows and their unicode hexadecimal, decimal and html codes"><tbody><tr><td></td><th scope="col">←</th><th scope="col">⇐</th><th scope="col">↫</th><th scope="col">⇇</th><th scope="col">⇦</th><th scope="col">⇤</th><th scope="col">⇠</th><th scope="col">↩</th><th scope="col">↤</th><th scope="col">⬱</th><th scope="col">↢</th><th scope="col">⬅</th><th scope="col">↜</th><th scope="col">↞</th><th scope="col">⇽</th></tr><tr><th scope="row">Unicode,&nbsp;hex</th><td>U+2190</td><td>U+21D0</td><td>U+21AB</td><td>U+21C7</td><td>U+21E6</td><td>U+21E4</td><td>U+21E0</td><td>U+21A9</td><td>U+21A4</td><td>U+2B31</td><td>U+21A2</td><td>U+2B05</td><td>U+219C</td><td>U+219E</td><td>U+21FD</td></tr><tr><th scope="row">Unicode,&nbsp;dec</th><td>8592</td><td>8656</td><td>8619</td><td>8647</td><td>8678</td><td>8676</td><td>8672</td><td>8617</td><td>8612</td><td>11057</td><td>8610</td><td>11013</td><td>8604</td><td>8606</td><td>8701</td></tr><tr><th scope="row">HTML</th><td>&amp;larr;</td><td>&amp;lArr;</td><td>&amp;larrlp;</td><td>&amp;llarr;</td><td></td><td>&amp;larrb;</td><td></td><td>&amp;larrhk;</td><td>&amp;LeftTeeArrow;</td><td></td><td>&amp;larrtl;</td><td></td><td></td><td>&amp;Larr;</td><td>&amp;loarr;</td></tr></tbody></table>
+|                   | ←      | ⇐      | ↫        | ⇇       | ⇦      | ⇤       | ⇠      | ↩        | ↤              | ⬱      | ↢        | ⬅      | ↜      | ↞      | ⇽       |
+|-------------------|--------|--------|----------|---------|--------|---------|--------|----------|----------------|--------|----------|--------|--------|--------|---------|
+| Unicode,&nbsp;hex | U+2190 | U+21D0 | U+21AB   | U+21C7  | U+21E6 | U+21E4  | U+21E0 | U+21A9   | U+21A4         | U+2B31 | U+21A2   | U+2B05 | U+219C | U+219E | U+21FD  |
+| Unicode,&nbsp;dec | 8592   | 8656   | 8619     | 8647    | 8678   | 8676    | 8672   | 8617     | 8612           | 11057  | 8610     | 11013  | 8604   | 8606   | 8701    |
+| HTML              | &amp;larr; | &amp;lArr; | &amp;larrlp; | &amp;llarr; |        | &amp;larrb; |        | &amp;larrhk; | &amp;LeftTeeArrow; |        | &amp;larrtl; |        |        | &amp;Larr; | &amp;loarr; |
+
+
 
 ### Right arrow (→ \&rarr;)
 http://right-arrow.net/  
@@ -63,10 +70,9 @@ To create a right arrow: Alt + 26 (on the Numpad, with Numlock on)
 |--------------|--------|---------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 | Unicode, hex | 0x2192 | 0x21d2; | 0x21ac | 0x21c9 | 0x21e8 | 0x21e5 | 0x21e2 | 0x21aa | 0x21a6 | 0x21f6 | 0x21a3 | 0x21f0 | 0x219d | 0x21a0 | 0x21fe |
 | Unicode, dec | 8594   | 8658    | 8620   | 8649   | 8680   | 8677   | 8674   | 8618   | 8614   | 8694   | 8611   | 8688   | 8605   | 8608   | 8702   |
-| HTML         | &rarr; | &rArr;  |        |        |        |        |        |        |        |        |        |        |        |        |        |
+| HTML         | &amp;rarr; | &amp;rArr;  |        |        |        |        |        |        |        |        |        |        |        |        |        |
 
 ### More Arrows
-https://www.toptal.com/designers/htmlarrows/
 
 | Symbol | Description             | HTML Entity | Unicode, hex | Unicode, dec |
 |:------:|-------------------------|-------------|--------------|--------------|
@@ -81,11 +87,12 @@ https://www.toptal.com/designers/htmlarrows/
 |   ↔    | Left Right Arrow Symbol | `&#8596;`   | 0x2194       | 8596         |
 |   ↕    | Up Down Arrow           | `&#8597;`   | 0x2195       | 8597         |
 
+> [Source](https://www.toptal.com/designers/htmlarrows/)
+
 ---
 
 ## Math
 ### Fractions
-https://unicode-suche.de/unicode-namesearch.pl?term=VULGAR&20FRACTION
 
 | Symbol | Description                    | HTML Entity | Unicode, hex | Unicode, dec |
 |:------:| ------------------------------ | ----------- | ------------ | ------------ |
@@ -108,6 +115,8 @@ https://unicode-suche.de/unicode-namesearch.pl?term=VULGAR&20FRACTION
 |   ⅝    | Vulgar Fraction Five Eighths   | `&frac58;`  | 0x215D       | 8541         |
 |   ⅞    | Vulgar Fraction Seven Eighths  | ?           | 0x215E       | 8542         | 
 
+> [Source](https://unicode-suche.de/unicode-namesearch.pl?term=VULGAR&20FRACTION)
+
 ### Calculation symbols
 | Symbol | Description              | HTML Entity | Unicode, hex | Unicode, dec |
 |:------:| ------------------------ | ----------- | ------------ | ------------ |
@@ -124,9 +133,7 @@ https://unicode-suche.de/unicode-namesearch.pl?term=VULGAR&20FRACTION
 |   ≥    | Greater-Than Or Equal To | `&ge;`      | 0x2265       | 8805         |
 
 ### Superscripts and Subscripts
-https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_and_subscripts_block
 
-[Unicode characters]
 |        | 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | A  | B  | C  | D  | E  | F  |
 |--------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
 | U+00Bx |    |    | x² | x³ |    |    |    |    |    | x¹ |    |    |    |    |    |    |
@@ -134,6 +141,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
 | U+208x | x₀ | x₁ | x₂ | x₃ | x₄ | x₅ | x₆ | x₇ | x₈ | x₉ | x₊ | x₋ | x₌ | x₍ | x₎ |    |
 | U+209x | xₐ | xₑ | xₒ | xₓ | xₔ | xₕ | xₖ | xₗ | xₘ | xₙ | xₚ | xₛ | xₜ |    |    |    |
 
+> [Source](https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_and_subscripts_block)
 
 ### Units
 | Symbol  | Description       | HTML Entity | Unicode, hex | Unicode, dec |
@@ -174,13 +182,10 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
 | Symbol | Description |
 | ------ | ----------- |
 | ℹ️       | Information |
-| ⚠️     | Warnung     |
-| 🗀 📁  | Ordner      | 
+| ⚠️     | Warning     |
+| 🗀 📁  | Folder      | 
 
 ### Ticks / Crosses
-> **Sources:**
-> - https://www.w3schools.com/charsets/ref_utf_dingbats.asp
-> - https://websitebuilders.com/tools/html-codes/dingbats/
 
 | Symbol | Description           | HTML Entity | Unicode, hex | Unicode, dec |
 |:------:| --------------------- | ----------- | ------------ | ------------ |
@@ -191,20 +196,86 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
 |   ✕    | Multiplication X      | n/a         | 0x2715       | 10005        |
 |   ✗    | Ballot X              | n/a         | 0x2717       | 10007        |
 
-### Box-drawing characters
-> **Sources:**
-> - https://de.wikipedia.org/wiki/Rahmenzeichen
-> - https://en.wikipedia.org/wiki/Box-drawing_character
+> Sources: [1](https://www.w3schools.com/charsets/ref_utf_dingbats.asp), [2](https://websitebuilders.com/tools/html-codes/dingbats/)
 
-<table style="color: rgb(255,255,255); border-collapse: collapse; background: rgb(24, 24, 24) none repeat scroll 0% 0%; font-size: large; text-align: center;">
+### Block Elements
+
+| Shade  | Block |
+| ------ | ----- |
+| full   | █    |
+| dark   | ▓    |
+| medium | ▒    |
+| light  | ░    |
+
+<table>
     <tbody>
         <tr>
-            <td colspan="17" style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">
-                <b><a href="https://en.wikipedia.org/wiki/Box_Drawing" title="Box Drawing">Box Drawing</a></b><br>
-                <a rel="nofollow" class="external text" href="https://www.unicode.org/charts/PDF/U2500.pdf">Official Unicode Consortium code chart</a> (PDF)
-            </td>
+            <td style="text-align: left; width: 45pt"></td>
+            <td style="text-align: center; width: 20pt">0</td>
+            <td style="text-align: center; width: 20pt">1</td>
+            <td style="text-align: center; width: 20pt">2</td>
+            <td style="text-align: center; width: 20pt">3</td>
+            <td style="text-align: center; width: 20pt">4</td>
+            <td style="text-align: center; width: 20pt">5</td>
+            <td style="text-align: center; width: 20pt">6</td>
+            <td style="text-align: center; width: 20pt">7</td>
+            <td style="text-align: center; width: 20pt">8</td>
+            <td style="text-align: center; width: 20pt">9</td>
+            <td style="text-align: center; width: 20pt">A</td>
+            <td style="text-align: center; width: 20pt">B</td>
+            <td style="text-align: center; width: 20pt">C</td>
+            <td style="text-align: center; width: 20pt">D</td>
+            <td style="text-align: center; width: 20pt">E</td>
+            <td style="text-align: center; width: 20pt">F</td>
         </tr>
-        <tr style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">
+        <tr>
+            <td>U+258x</td>
+            <td title="U+2580: UPPER HALF BLOCK">▀</td>
+            <td title="U+2581: LOWER ONE EIGHTH BLOCK">▁</td>
+            <td title="U+2582: LOWER ONE QUARTER BLOCK">▂</td>
+            <td title="U+2583: LOWER THREE EIGHTHS BLOCK">▃</td>
+            <td title="U+2584: LOWER HALF BLOCK">▄</td>
+            <td title="U+2585: LOWER FIVE EIGHTHS BLOCK">▅</td>
+            <td title="U+2586: LOWER THREE QUARTERS BLOCK">▆</td>
+            <td title="U+2587: LOWER SEVEN EIGHTHS BLOCK">▇</td>
+            <td title="U+2588: FULL BLOCK">█</td>
+            <td title="U+2589: LEFT SEVEN EIGHTHS BLOCK">▉</td>
+            <td title="U+258A: LEFT THREE QUARTERS BLOCK">▊</td>
+            <td title="U+258B: LEFT FIVE EIGHTHS BLOCK">▋</td>
+            <td title="U+258C: LEFT HALF BLOCK">▌</td>
+            <td title="U+258D: LEFT THREE EIGHTHS BLOCK">▍</td>
+            <td title="U+258E: LEFT ONE QUARTER BLOCK">▎</td>
+            <td title="U+258F: LEFT ONE EIGHTH BLOCK">▏</td>
+        </tr>
+        <tr>
+            <td>U+259x</td>
+            <td title="U+2590: RIGHT HALF BLOCK">▐</td>
+            <td title="U+2591: LIGHT SHADE">░</td>
+            <td title="U+2592: MEDIUM SHADE">▒</td>
+            <td title="U+2593: DARK SHADE">▓</td>
+            <td title="U+2594: UPPER ONE EIGHTH BLOCK">▔</td>
+            <td title="U+2595: RIGHT ONE EIGHTH BLOCK">▕</td>
+            <td title="U+2596: QUADRANT LOWER LEFT">▖</td>
+            <td title="U+2597: QUADRANT LOWER RIGHT">▗</td>
+            <td title="U+2598: QUADRANT UPPER LEFT">▘</td>
+            <td title="U+2599: QUADRANT UPPER LEFT AND LOWER LEFT AND LOWER RIGHT">▙</td>
+            <td title="U+259A: QUADRANT UPPER LEFT AND LOWER RIGHT">▚</td>
+            <td title="U+259B: QUADRANT UPPER LEFT AND UPPER RIGHT AND LOWER LEFT">▛</td>
+            <td title="U+259C: QUADRANT UPPER LEFT AND UPPER RIGHT AND LOWER RIGHT">▜</td>
+            <td title="U+259D: QUADRANT UPPER RIGHT">▝</td>
+            <td title="U+259E: QUADRANT UPPER RIGHT AND LOWER LEFT">▞</td>
+            <td title="U+259F: QUADRANT UPPER RIGHT AND LOWER LEFT AND LOWER RIGHT">▟</td>
+        </tr>
+    </tbody>
+</table>
+
+> [Source](https://en.wikipedia.org/wiki/Box-drawing_character#Block_Elements)
+
+### Box-drawing characters
+
+<table>
+    <tbody>
+        <tr>
             <td style="width: 45pt">&nbsp;</td>
             <td style="width: 20pt">0</td>
             <td style="width: 20pt">1</td>
@@ -224,7 +295,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
             <td style="width: 20pt">F</td>
         </tr>
         <tr>
-            <td style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">U+250x</td>
+            <td>U+250x</td>
             <td title="U+2500: BOX DRAWINGS LIGHT HORIZONTAL">─</td>
             <td title="U+2501: BOX DRAWINGS HEAVY HORIZONTAL">━</td>
             <td title="U+2502: BOX DRAWINGS LIGHT VERTICAL">│</td>
@@ -243,7 +314,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
             <td title="U+250F: BOX DRAWINGS HEAVY DOWN AND RIGHT">┏</td>
         </tr>
         <tr>
-            <td style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">U+251x</td>
+            <td>U+251x</td>
             <td title="U+2510: BOX DRAWINGS LIGHT DOWN AND LEFT">┐</td>
             <td title="U+2511: BOX DRAWINGS DOWN LIGHT AND LEFT HEAVY">┑</td>
             <td title="U+2512: BOX DRAWINGS DOWN HEAVY AND LEFT LIGHT">┒</td>
@@ -262,7 +333,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
             <td title="U+251F: BOX DRAWINGS DOWN HEAVY AND RIGHT UP LIGHT">┟</td>
         </tr>
         <tr>
-            <td style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">U+252x</td>
+            <td>U+252x</td>
             <td title="U+2520: BOX DRAWINGS VERTICAL HEAVY AND RIGHT LIGHT">┠</td>
             <td title="U+2521: BOX DRAWINGS DOWN LIGHT AND RIGHT UP HEAVY">┡</td>
             <td title="U+2522: BOX DRAWINGS UP LIGHT AND RIGHT DOWN HEAVY">┢</td>
@@ -281,7 +352,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
             <td title="U+252F: BOX DRAWINGS DOWN LIGHT AND HORIZONTAL HEAVY">┯</td>
         </tr>
         <tr>
-            <td style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">U+253x</td>
+            <td>U+253x</td>
             <td title="U+2530: BOX DRAWINGS DOWN HEAVY AND HORIZONTAL LIGHT">┰</td>
             <td title="U+2531: BOX DRAWINGS RIGHT LIGHT AND LEFT DOWN HEAVY">┱</td>
             <td title="U+2532: BOX DRAWINGS LEFT LIGHT AND RIGHT DOWN HEAVY">┲</td>
@@ -300,7 +371,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
             <td title="U+253F: BOX DRAWINGS VERTICAL LIGHT AND HORIZONTAL HEAVY">┿</td>
         </tr>
         <tr>
-            <td style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">U+254x</td>
+            <td>U+254x</td>
             <td title="U+2540: BOX DRAWINGS UP HEAVY AND DOWN HORIZONTAL LIGHT">╀</td>
             <td title="U+2541: BOX DRAWINGS DOWN HEAVY AND UP HORIZONTAL LIGHT">╁</td>
             <td title="U+2542: BOX DRAWINGS VERTICAL HEAVY AND HORIZONTAL LIGHT">╂</td>
@@ -319,7 +390,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
             <td title="U+254F: BOX DRAWINGS HEAVY DOUBLE DASH VERTICAL">╏</td>
         </tr>
         <tr>
-            <td style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">U+255x</td>
+            <td>U+255x</td>
             <td title="U+2550: BOX DRAWINGS DOUBLE HORIZONTAL">═</td>
             <td title="U+2551: BOX DRAWINGS DOUBLE VERTICAL">║</td>
             <td title="U+2552: BOX DRAWINGS DOWN SINGLE AND RIGHT DOUBLE">╒</td>
@@ -338,7 +409,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
             <td title="U+255F: BOX DRAWINGS VERTICAL DOUBLE AND RIGHT SINGLE">╟</td>
         </tr>
         <tr>
-            <td style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small; ">U+256x</td>
+            <td>U+256x</td>
             <td title="U+2560: BOX DRAWINGS DOUBLE VERTICAL AND RIGHT">╠</td>
             <td title="U+2561: BOX DRAWINGS VERTICAL SINGLE AND LEFT DOUBLE">╡</td>
             <td title="U+2562: BOX DRAWINGS VERTICAL DOUBLE AND LEFT SINGLE">╢</td>
@@ -357,7 +428,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
             <td title="U+256F: BOX DRAWINGS LIGHT ARC UP AND LEFT">╯</td>
         </tr>
         <tr>
-            <td style="background: rgb(48, 48, 48) none repeat scroll 0% 0%; font-size: small;">U+257x</td>
+            <td>U+257x</td>
             <td title="U+2570: BOX DRAWINGS LIGHT ARC UP AND RIGHT">╰</td>
             <td title="U+2571: BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT">╱</td>
             <td title="U+2572: BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT">╲</td>
@@ -377,6 +448,8 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts#Superscripts_a
         </tr>
     </tbody>
 </table>
+
+> [Source](https://en.wikipedia.org/wiki/Box-drawing_character#Block_Elements)
 
 #### Examples
 **Single and double frames**
