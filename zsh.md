@@ -19,17 +19,28 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 **Essential plugins:**
 ```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+[ -z $ZSH_CUSTOM ] && ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom"
+git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+git clone https://github.com/zsh-users/zsh-history-substring-search "$ZSH_CUSTOM/plugins/zsh-history-substring-search"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
 ```
 
 **Powerlevel10k:**
 ```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 ```
 
 Run `p10k configure` to configure.
+
+### Updates
+
+```bash
+[ -z $ZSH_CUSTOM ] && ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom"
+git -C "$ZSH_CUSTOM/plugins/zsh-autosuggestions" pull
+git -C "$ZSH_CUSTOM/plugins/zsh-history-substring-search" pull
+git -C "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" pull
+git -C "$ZSH_CUSTOM/themes/powerlevel10k" pull
+```
 
 ### Themes
 
