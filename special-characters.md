@@ -141,6 +141,7 @@ More? → [copypastecharacter.com/arrows](https://copypastecharacter.com/arrows)
 |   >    | Greater-Than Sign        | `&gt;`      | 0x3E         | 62           |
 |   ≤    | Less-Than Or Equal To    | `&le;`      | 0x2264       | 8804         |
 |   ≥    | Greater-Than Or Equal To | `&ge;`      | 0x2265       | 8805         |
+|   √    | Square Root Symbol       |             | 0x221A       | 8730         |
 
 ### Superscripts and Subscripts
 
