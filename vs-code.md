@@ -18,49 +18,43 @@ category: Development tools
     "window.menuBarVisibility": "compact",
     "window.commandCenter": true,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontFamily": "FiraCode NF",
+    "editor.fontFamily": "Hack, Fira Code, Consolas, monospace",
+    "terminal.integrated.fontFamily": "Hack Nerd Font, Hack NF, Hack, FiraCode Nerd Font, FiraCode NF, FiraCode, Consolas, monospace",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontSize": 16,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.profiles.windows": {
         "Cygwin Bash": {
             "path": "C:\\cygwin64\\bin\\bash.exe",
             "args": ["/bin/xhere", "/bin/bash"],
             "icon": "terminal-bash"
-        },
-        "Cygwin Fish": {
-            "path": "C:\\cygwin64\\bin\\bash.exe",
-            "args": ["/bin/xhere", "/bin/fish"],
-            "icon": "star"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Cygwin Fish",
+    "terminal.integrated.defaultProfile.windows": "Cygwin Bash",
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "javascript.preferences.importModuleSpecifier": "relative",
     "typescript.preferences.importModuleSpecifier": "relative",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "always",
     },
     "[markdown]": {
-        "editor.wordWrap": "on"
+        "editor.wordWrap": "off"
     },
     "markdown.styles": [
         ".obsidian/snippets/vscode.css"
     ],
+    "markdownExtended.pdfDisplayHeaderFooter": false,
     "prettier.tabWidth": 4,
     "files.associations": {
         "*.pacscript": "shellscript"
-    }
+    },
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "never",
+    "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer"
 }
 
 ```
-
-### Nerd font
-
-- `"terminal.integrated.fontFamily": "FiraCode NF"`
-- Windows: `FiraCode NF`
-- Linux: `FiraCode Nerd Font`
-
 
 ## Extensions
 
@@ -74,12 +68,14 @@ Or you can use the command line:
 > ```
 > Source: [Documentation](https://code.visualstudio.com/docs/editor/extension-marketplace#_command-line-extension-management)
 
-| Extension                                                                                                                     | Categories                       | Unique Identifier                            |
-|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------|----------------------------------------------|
-| [Markdown Extended](https://marketplace.visualstudio.com/items?itemName=jebbs.markdown-extended)                              | Other                            | `jebbs.markdown-extended`                    |
-| [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)                         | Programming Languages, Formatter | `yzhang.markdown-all-in-one`                 |
-| [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)                                        | Formatter                        | `esbenp.prettier-vscode`                     |
-| [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)    | Programming Languages            | `styled-components.vscode-styled-components` |
-| [css2react](https://marketplace.visualstudio.com/items?itemName=gottfired.css2react)                                          | Other                            | `gottfired.css2react`                        |
-| [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) | Snippets                         | `dsznajder.es7-react-js-snippets`            |
-| [AutoHotkey Plus Plus](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus)           | Programming Languages, Snippets  | `mark-wiemer.vscode-autohotkey-plus-plus`    |
+| Extension                                                                                                                     | Categories                                        | Unique Identifier                            |
+| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------- |
+| [Markdown Extended](https://marketplace.visualstudio.com/items?itemName=jebbs.markdown-extended)                              | Other                                             | `jebbs.markdown-extended`                    |
+| [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) | Other                                             | `bierner.markdown-preview-github-styles`     |
+| [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)                                  | Programming Languages, Formatters                 | `rust-lang.rust-analyzer`                    |
+| [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)                              | Programming Languages, Linters, Formatters, Other | `tamasfe.even-better-toml`                   |
+| [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)                                        | Formatter                                         | `esbenp.prettier-vscode`                     |
+| [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)    | Programming Languages                             | `styled-components.vscode-styled-components` |
+| [css2react](https://marketplace.visualstudio.com/items?itemName=gottfired.css2react)                                          | Other                                             | `gottfired.css2react`                        |
+| [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) | Snippets                                          | `dsznajder.es7-react-js-snippets`            |
+| [AutoHotkey Plus Plus](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus)           | Programming Languages, Snippets                   | `mark-wiemer.vscode-autohotkey-plus-plus`    |
