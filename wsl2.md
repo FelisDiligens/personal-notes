@@ -7,6 +7,34 @@ category: Windows
 
 # Windows Subsystem for Linux
 
+## Installation
+
+Enter in an unelevated PowerShell prompt:  
+```powershell
+wsl --install
+```
+
+This will install the following things:
+- Virtual Machine Platform (German: "VM-Plattform")
+- Windows Subsystem for Linux
+- WSL Kernel
+- Ubuntu
+
+## Uninstallation
+
+### Remove distro
+
+```powershell
+wsl --shutdown
+wsl --unregister <distro>
+```
+
+### Remove WSL
+
+Uninstall the following Windows Features:
+- Virtual Machine Platform (German: "VM-Plattform")
+- Windows Subsystem for Linux
+
 ## Usage
 
 - Shutdown running distro(s): `wsl --shutdown`
@@ -18,21 +46,78 @@ category: Windows
 - Export distro: `wsl --export Debian $env:USERPROFILE\WSL\DebianExport.tar`
 - Import distro: `wsl --import Debian $env:USERPROFILE\WSL\Debian $env:USERPROFILE\WSL\DebianExport.tar`
 
-## wslutilities
+## Troubleshooting
+
+### Switch to version 2
+
+Check which WSL version is used:
+```powershell
+wsl --list --verbose
+```
+```txt
+  NAME          STATE            VERSION
+* Ubuntu        Stopped          2
+```
+
+Switch to version 2:
+```powershell
+wsl --set-version Ubuntu 2
+```
+
+```txt
+Conversion in progress, this may take a few minutes...
+For information on key differences with WSL 2 please visit https://aka.ms/wsl2
+Conversion complete.
+```
+
+If the above command fails due to a missing update:
+```powershell
+wsl --update
+```
+
+### Use VMware/VirtualBox with WSL2
+
+VMware 15.5.5+ and VirtualBox 6+ support Hyper-V, although the performance will be degraded:
+
+> When Hyper-V is enabled on the Windows host, the hypervisor is running at ring 3 while without it, the hypervisor runs at ring 0. So it is expected to be slower as there are additional layers of software (the WHP API and so on) before it gets to the CPU virtualisation features.  
+> [Source](https://communities.vmware.com/t5/VMware-Workstation-Player/Huge-performance-drop-of-VMWare-Player-guest-running-on-Windows/m-p/2808506/highlight/true#M35785)
+
+You can check if Hyper-V is enabled with:
+```powershell
+bcdedit /enum | findstr -i hypervisorlaunchtype
+```
+
+To enable it:
+```powershell
+bcdedit /set hypervisorlaunchtype auto
+```
+
+And to disable it:
+```powershell
+bcdedit /set hypervisorlaunchtype off
+```
+
+Run the above commands in an elevated PowerShell prompt. You'll have to restart Windows to apply the change.
+
+- With Hyper-V you can use WSL2, but VM performance will be significantly degraded.
+- Without Hyper-V you cannot use WSL2, but VM performance will be normal.
+
+You can switch between launch types depending on your need at any time.
+
+## Miscellaneous
+
+### wslutilities
 
 - [GitHub](https://github.com/wslutilities/wslu#readme)
 - [Website](https://wslutiliti.es/wslu/)
 - [Installation](https://wslutiliti.es/wslu/install.html)
 
-### Add desktop shortcuts
+#### Add desktop shortcuts
 
 ```bash
 find /usr/share/icons -iname "*nautilus*"
 wslusc -n "Files" -i /usr/share/icons/Yaru/256x256@2x/apps/org.gnome.Nautilus.png nautilus
 ```
-
-
-## Miscellaneous
 
 ### Change default shell
 
@@ -52,10 +137,6 @@ systemd=true
 
 ### Run in background
 
-#### Interactively
-
-See https://gist.github.com/FelisDiligens/fedd413fc1192aa43150891a631e9c8c
-
 #### Automatically
 
 `wsl-startup.vbs`
@@ -67,16 +148,13 @@ set ws=wscript.CreateObject("wscript.shell")
 ws.run "wsl -d <Distro>", 0
 ```
 
-> Source: https://askubuntu.com/a/1452424
+> [Source](https://askubuntu.com/a/1452424)
 
 ### Mount ext4
-
-https://www.hanselman.com/blog/wsl2-can-now-mount-linux-ext4-disks-directly
 
 List drives in PowerShell:
 ```powershell
 Get-CimInstance -query "SELECT * from Win32_DiskDrive"
-wsl --mount \\.\PHYSICALDRIVE0 --type ext4 --partition 2
 ```
 
 Mount a partition in WSL:
@@ -90,3 +168,5 @@ To unmount it:
 ```powershell
 wsl --unmount \\.\PHYSICALDRIVE0
 ```
+
+> [Source](https://www.hanselman.com/blog/wsl2-can-now-mount-linux-ext4-disks-directly)
