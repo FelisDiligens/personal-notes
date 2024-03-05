@@ -159,14 +159,26 @@ Get-CimInstance -query "SELECT * from Win32_DiskDrive"
 
 Mount a partition in WSL:
 ```powershell
-wsl --mount \\.\PHYSICALDRIVE0 --type ext4 --partition 2
+wsl --mount \\.\PHYSICALDRIVE0 --type ext4 --partition 2 --name myDisk
 ```
 
-This should mount it under: `/mnt/wsl/PHYSICALDRIVE0p2`
+This should mount it under: `/mnt/wsl/myDisk`
 
 To unmount it:
 ```powershell
 wsl --unmount \\.\PHYSICALDRIVE0
 ```
 
-> [Source](https://www.hanselman.com/blog/wsl2-can-now-mount-linux-ext4-disks-directly)
+**However, there are some limitations.**
+
+In general:
+- Only entire disks can be attached to WSL 2, so the disk should be detached from Windows. (The boot device cannot be attached to WSL 2)
+
+More specifically, when mounting a partition using `wsl --mount`:
+- The disk needs to be either MBR (Master Boot Record) or GPT (GUID Partition Table).
+- Only filesystems that are natively supported in the kernel can be mounted. Installed filesystem drivers (`ntfs-3g` for example) won't work.
+
+If you need to attach LVM disks, or filesystems that aren't directly supported by the Kernel, you need to attach the disk via `--bare`.
+
+> [Source: hanselman.com](https://www.hanselman.com/blog/wsl2-can-now-mount-linux-ext4-disks-directly)  
+> [Source: learn.microsoft.com](https://learn.microsoft.com/en-us/windows/wsl/wsl2-mount-disk)
