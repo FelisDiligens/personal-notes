@@ -104,6 +104,25 @@ Run the above commands in an elevated PowerShell prompt. You'll have to restart 
 
 You can switch between launch types depending on your need at any time.
 
+### Portmaster
+
+Add a firewall rule:
+
+```powershell
+New-NetFirewallRule -Name "WSL" -DisplayName "WSL" -Direction Inbound -InterfaceAlias "vEthernet (WSL)" -Action Allow
+```
+
+After a reboot, the rule won't work. Run to reactivate:
+
+```powershell
+Get-NetFirewallInterfaceFilter -AssociatedNetFirewallRule (Get-NetFirewallRule -DisplayName 'WSL') | Set-NetFirewallInterfaceFilter -InterfaceAlias 'vEthernet (WSL)'
+```
+
+You can automate the above command using a task.
+
+[Source: reddit.com - r/safing u/csdvrx](https://www.reddit.com/r/safing/comments/ryioj7/portmaster_breaks_wsl2_in_windows_11_a_guide_to/)
+[Source: github.com - microsoft/WSL Issue #4139](https://github.com/microsoft/WSL/issues/4139#issuecomment-778428577)
+
 ## Miscellaneous
 
 ### wslutilities
