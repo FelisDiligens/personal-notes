@@ -14,12 +14,14 @@ category: Development tools
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.enabled": false,
+    "security.allowedUNCHosts": ["wsl.localhost"],
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "compact",
     "window.commandCenter": true,
+    "editor.rulers": [80],
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Hack, Fira Code, Consolas, monospace",
-    "terminal.integrated.fontFamily": "Hack Nerd Font, Hack NF, Hack, FiraCode Nerd Font, FiraCode NF, FiraCode, Consolas, monospace",
+    "editor.fontFamily": "Hack, Hack Nerd Font, Hack NF, Source Code Pro, Fira Code, Consolas, monospace",
+    "terminal.integrated.fontFamily": "Hack Nerd Font, Hack NF, FiraCode Nerd Font, FiraCode NF, Hack, FiraCode, Consolas, monospace",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
@@ -32,8 +34,11 @@ category: Development tools
     },
     "terminal.integrated.defaultProfile.windows": "Cygwin Bash",
     "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "javascript.preferences.importModuleSpecifier": "relative",
     "typescript.preferences.importModuleSpecifier": "relative",
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": "always",
     },
@@ -44,14 +49,14 @@ category: Development tools
         ".obsidian/snippets/vscode.css"
     ],
     "markdownExtended.pdfDisplayHeaderFooter": false,
-    "prettier.tabWidth": 4,
     "files.associations": {
         "*.pacscript": "shellscript"
     },
     "explorer.confirmDelete": false,
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
-    "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer"
+    "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer",
+    "files.eol": "\n",
 }
 
 ```
