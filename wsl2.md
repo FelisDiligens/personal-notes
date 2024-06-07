@@ -123,6 +123,17 @@ You can automate the above command using a task.
 [Source: reddit.com - r/safing u/csdvrx](https://www.reddit.com/r/safing/comments/ryioj7/portmaster_breaks_wsl2_in_windows_11_a_guide_to/)
 [Source: github.com - microsoft/WSL Issue #4139](https://github.com/microsoft/WSL/issues/4139#issuecomment-778428577)
 
+### WSLg issues
+
+#### GNOME Terminal doesn't start
+
+In Debian, it seems that the locale isn't configured by default. GNOME Terminal's systemd service crashes with this error message: `Non UTF-8 locale (ANSI_X3.4-1968) is not supported!`
+
+To configure locales, run:
+```bash
+sudo dpkg-reconfigure locales
+```
+
 ## Miscellaneous
 
 ### wslutilities
@@ -141,7 +152,7 @@ wslusc -n "Files" -i /usr/share/icons/Yaru/256x256@2x/apps/org.gnome.Nautilus.pn
 ### Change default shell
 
 ```bash
-chsh --shell /usr/bin/fish
+chsh --shell /usr/bin/zsh
 ```
 
 ### systemd
@@ -156,18 +167,39 @@ systemd=true
 
 ### Run in background
 
-#### Automatically
-
-`wsl-startup.vbs`
-
-Change `<Distro>` to the distro name you are using. Use `wsl -l` to find out the name.
-
-```vbs
-set ws=wscript.CreateObject("wscript.shell")
-ws.run "wsl -d <Distro>", 0
+Build and install `hang-stdin`:
+```bash
+# Clone hang-stdin
+git clone https://github.com/firejox/hang-stdin.git
+cd hang-stdin
+# Generate build folder
+cmake -S . -B ./build
+# Build executable
+cmake --build ./build
+# Install into /usr/local/bin/hang-stdin
+sudo cmake --install ./build --prefix /usr/local/
 ```
 
-> [Source](https://askubuntu.com/a/1452424)
+Create the file `/etc/systemd/system/wsl-keepalive.service` with the following content:
+```ini
+[Unit]
+Description=WSL Keep Distro Alive
+
+[Service]
+ExecStart=/usr/local/bin/hang-stdin /mnt/c/Windows/System32/choice.exe /n
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Start the service with systemd:
+```bash
+sudo systemctl enable --now wsl-keepalive.service
+```
+
+Close the interactive shell (`/bin/bash` by default), and check after 30 seconds to a minute (by running `wsl -l -v` in PowerShell) whether the distro has "Stopped" or is still "Running". It should keep running now.
+
+A full explanation can be found here: https://github.com/firejox/hang-stdin#keep-wsl-distro-alive
 
 ### Mount ext4
 
@@ -201,3 +233,31 @@ If you need to attach LVM disks, or filesystems that aren't directly supported b
 
 > [Source: hanselman.com](https://www.hanselman.com/blog/wsl2-can-now-mount-linux-ext4-disks-directly)  
 > [Source: learn.microsoft.com](https://learn.microsoft.com/en-us/windows/wsl/wsl2-mount-disk)
+
+### Alt-dragging WSLg windows
+
+This script can be run everytime the WSL distro is started:
+
+```powershell
+# Write to `weston.ini` inside the system distro as root:
+wsl.exe --user root --system bash -c "cat <<EOF | tee /home/wslg/.config/weston.ini
+[xwayland]
+disable_access_control=true
+
+[input-method]
+path=
+
+[shell]
+binding-modifier=alt
+EOF"
+# Check config (optional):
+wsl.exe --user root --system bash -c "cat /home/wslg/.config/weston.ini"
+# Restart Weston (this will kill all GUI apps):
+wsl.exe --user root --system pkill -HUP weston
+# Wait for input:
+pause
+```
+
+As the WSL system distro is ephemeral, the change to the `weston.ini` isn't persisted.
+
+> Sources: [wslg #324](https://github.com/microsoft/wslg/issues/324), [wslg #865](https://github.com/microsoft/wslg/issues/865), [wslg #173](https://github.com/microsoft/wslg/issues/173)
