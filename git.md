@@ -76,6 +76,12 @@ git remote add origin https://github.com/<user>/<project>.git
 git push -u origin main
 ```
 
+### Change `origin` URL
+
+```bash
+git remote set-url origin <new-url>
+```
+
 ### Drop commits
 
 - Remove last commit and any changes: `git reset --hard HEAD^`
