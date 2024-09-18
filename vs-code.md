@@ -24,41 +24,114 @@ category: Development tools
     "terminal.integrated.fontFamily": "Hack Nerd Font, Hack NF, FiraCode Nerd Font, FiraCode NF, Hack, FiraCode, Consolas, monospace",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontSize": 16,
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": ["-NoLogo"]
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
         "Cygwin Bash": {
             "path": "C:\\cygwin64\\bin\\bash.exe",
             "args": ["/bin/xhere", "/bin/bash"],
             "icon": "terminal-bash"
+        },
+        "Git Bash": {
+            "source": "Git Bash",
+            "icon": "terminal-bash"
+        },
+        "MSYS2": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": [
+                "--login",
+                "-i"
+            ],
+            "env": {
+                "MSYSTEM": "MINGW64",
+                "CHERE_INVOKING": "1"
+            }
+        },
+        "MSYS2 UCRT": {
+            "path": "cmd.exe",
+            "args": [
+                "/c",
+                "C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -ucrt64"
+            ]
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Cygwin Bash",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "javascript.preferences.importModuleSpecifier": "relative",
     "typescript.preferences.importModuleSpecifier": "relative",
+    "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": "always",
+        "source.organizeImports": "always"
     },
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "git.autofetch": false,
+    "git.openRepositoryInParentFolders": "never",
+    "files.associations": {
+        "*.pacscript": "shellscript"
+    },
+    "files.eol": "\n",
+    "formattingToggle.affects": [
+        "editor.formatOnPaste",
+        "editor.formatOnSave",
+        "editor.formatOnType"
+    ],
+    "markdownExtended.pdfDisplayHeaderFooter": false,
+    "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer",
     "[markdown]": {
         "editor.wordWrap": "off"
     },
     "markdown.styles": [
         ".obsidian/snippets/vscode.css"
     ],
-    "markdownExtended.pdfDisplayHeaderFooter": false,
-    "files.associations": {
-        "*.pacscript": "shellscript"
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.detectIndentation": true
     },
-    "explorer.confirmDelete": false,
-    "git.autofetch": true,
-    "git.openRepositoryInParentFolders": "never",
-    "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer",
-    "files.eol": "\n",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.detectIndentation": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "[go]": {
+      "editor.defaultFormatter": "golang.go"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    }
 }
-
 ```
 
 ## Extensions
