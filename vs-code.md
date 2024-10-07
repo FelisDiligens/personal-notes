@@ -18,6 +18,9 @@ category: Development tools
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "compact",
     "window.commandCenter": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.productIconTheme": "Tabler",
     "editor.rulers": [80],
     "editor.fontLigatures": true,
     "editor.fontFamily": "Hack, Hack Nerd Font, Hack NF, Source Code Pro, Fira Code, Consolas, monospace",
@@ -70,8 +73,8 @@ category: Development tools
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "javascript.preferences.importModuleSpecifier": "relative",
-    "typescript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.importModuleSpecifier": "shortest",
+    "typescript.preferences.importModuleSpecifier": "shortest",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -81,7 +84,13 @@ category: Development tools
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
     "git.autofetch": false,
+    "git.autorefresh": true,
     "git.openRepositoryInParentFolders": "never",
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
     "files.associations": {
         "*.pacscript": "shellscript"
     },
