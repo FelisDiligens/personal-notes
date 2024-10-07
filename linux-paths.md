@@ -7,9 +7,8 @@ category: Linux
 
 Most Linux distributions use the [Filesystem Hierarchy Standard (FHS)](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) (although exceptions like NixOS exist).
 
-!!! note Note
-Directories have a trailing `/`, files don't.
-!!!
+> [!note]
+> Directories have a trailing `/`, files don't.
 
 ## Basics
 Here's an overview over the linux file system structure:
